@@ -5,6 +5,10 @@
   font-family: Helvetica;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main_container {
   min-height: 70vh;
 }
