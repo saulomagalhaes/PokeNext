@@ -1,6 +1,9 @@
+import styles from '../styles/Home.module.css';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+
+import Card from './components/Card';
 
 export async function getStaticProps() {
   const maxPokemons = 251;
@@ -38,11 +41,7 @@ export default function Home({ pokemons }) {
 
       <div className={styles.pokemon_container}>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>
-            <Link href="/pokemon/[id]">
-              <a>{pokemon.name}</a>
-            </Link>
-          </li>
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </>
