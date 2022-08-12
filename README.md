@@ -17,5 +17,5 @@ Veja o projeto em funcionamento http://pokenext-omega.vercel.app/
 
 ## Funcionalidades
 
-- Listar pokempons
+- Listar pokemons
 - Exibir Detalhes de um pokemón
